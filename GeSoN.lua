@@ -1519,7 +1519,7 @@ Reply_Status(msg,msg.sender_user_id_,"unlock","℘ : تم فـتح البوتا�
 return false
 end 
 if text == "فتح البوتات " and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
@@ -1578,7 +1578,7 @@ Reply_Status(msg,msg.sender_user_id_,"unlock","℘ : تم فـتح تعديل")
 return false
 end 
 if text == "فتح الكل" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
@@ -1637,7 +1637,7 @@ Reply_Status(msg,msg.sender_user_id_,"unlock","℘ : تم فتح الروابط"
 return false
 end 
 if text == "قفل المعرفات" and Addictive(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
@@ -1795,7 +1795,7 @@ Reply_Status(msg,msg.sender_user_id_,"unlock","℘ : تم فتح الفيديو"
 return false
 end 
 if text == "قفل المتحركه" and Addictive(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
@@ -2248,7 +2248,7 @@ Reply_Status(msg,msg.sender_user_id_,"lockkick","℘ : تم قفل التكرا�
 return false
 end 
 if text == "قفل التكرار" and Addictive(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
@@ -2992,7 +2992,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^تنزيل منشئ اساسي @(.*)$") and DevBot(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
@@ -3173,7 +3173,7 @@ return false
 end 
 
 if text and text:match("^رفع مدير (%d+)$") and Constructor(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
@@ -3261,7 +3261,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^رفع ادمن @(.*)$") and Owner(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
@@ -3307,7 +3307,7 @@ Reply_Status(msg,userid,"reply","℘ : تم ترقيته ادمن للمجموع
 return false
 end
 if text == ("تنزيل ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
@@ -3343,7 +3343,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_GeSoN, 
 return false
 end
 if text and text:match("^تنزيل ادمن (%d+)$") and Owner(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
@@ -3356,7 +3356,7 @@ return false
 end
 
 if text == ("رفع مميز") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
@@ -7170,7 +7170,7 @@ database:del(bot_id.."GeSoN:Fun_Bots"..msg.chat_id_)
 end
 
 if text == 'تفعيل الايدي' and Owner(msg) then 
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
@@ -7193,7 +7193,7 @@ database:set(bot_id..'GeSoN:Lock:ID:Bot'..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_,'℘ : تم تعطيل الايدي') 
 end
 if text == 'تفعيل الايدي بالصوره' and Owner(msg) then   
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
@@ -7293,7 +7293,7 @@ if text == 'ايديي' then
 send(msg.chat_id_, msg.id_,' *℘ : ايديك »* '..msg.sender_user_id_)
 end
 if text == 'تعين الايدي' and Owner(msg) then
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
@@ -8887,7 +8887,7 @@ end
 end
 end
 if text == "انمي" then
-data,res = https.request('https://shahum.ml/audioss/photo.php')
+data,res = https.request('https://uussuu.ml/audioss/photo.php')
 if res == 200 then
 photo = json:decode(data)
 if photo.Info == true then
@@ -8902,7 +8902,7 @@ end
 end
 end
 if text == "غنيلي" then
-data,res = https.request('https://shahum.ml/audioss/audios.php')
+data,res = https.request('https://uussuu.ml/audioss/audios.php')
 if res == 200 then
 audios = json:decode(data)
 if audios.Info == true then
@@ -8917,7 +8917,7 @@ end
 end
 end
 if text == "شعر" then
-data,res = https.request('https://shahum.ml/audioss/shaer.php')
+data,res = https.request('https://uussuu.ml/audioss/shaer.php')
 if res == 200 then
 audios = json:decode(data)
 if audios.Info == true then
@@ -8932,7 +8932,7 @@ end
 end
 end
 if text == "ريمكس" then
-data,res = https.request('https://shahum.ml/audioss/remax.php')
+data,res = https.request('https://uussuu.ml/audioss/remax.php')
 if res == 200 then
 audios = json:decode(data)
 if audios.Info == true then
@@ -9180,7 +9180,7 @@ dofile("GeSoN.lua")
 send(msg.chat_id_, msg.id_, "℘ : تم تحديث ملفات البوت بنجاح .\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄")
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @YV9YV ] ❳')
@@ -9213,7 +9213,7 @@ return false
 end
 
 if text == 'همسه' or text == 'الهمسه' then
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
@@ -9235,7 +9235,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/lllbbtr/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'حذف' or text == 'رابط الحذف' or text == 'بوت الحذف' then
-local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   

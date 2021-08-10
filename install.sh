@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-cd $HOME/GeSoN
+cd $HOME/kobra
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x GeSoN
+chmod +x kobra
 chmod +x ts
 ./ts
 }
 get() {
-rm -fr GeSoN.lua
+rm -fr kobra.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/Source-Becca/GeSoN/master/GeSoN.lua"
+wget "https://raw.githubusercontent.com/Source-Becca/kobra/master/kobra.lua"
 lua start.lua
 }
 installall(){
@@ -47,7 +47,7 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd GeSoN
+cd kobra
 rm -rf luarocks*
 lua start.lua
 

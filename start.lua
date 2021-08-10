@@ -71,7 +71,7 @@ Runkobra:write([[
 cd $HOME/kobra
 token="]]..database:get(Server_kobra.."Token_kobra")..[["
 rm -fr kobra.lua
-wget "https://raw.githubusercontent.com/Source-Becca/kobra/master/kobra.lua"
+wget "https://raw.githubusercontent.com/Kobra-h/kobra/master/kobra.lua"
 while(true) do
 rm -fr ../.telegram-cli
 ./tg -s ./kobra.lua -p PROFILE --bot=$token
